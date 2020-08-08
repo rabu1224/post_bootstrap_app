@@ -1,0 +1,14 @@
+---
+ja:
+  activerecord:
+    # ***** 以下を追加 *****
+    models:
+      post: メッセージ
+    attributes:
+      post:
+        title: タイトル
+        content: 内容
+    # ***** 以上を追加 *****
+    errors:
+      messages:
+        # 略

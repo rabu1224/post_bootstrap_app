@@ -33,3 +33,14 @@ module PostBootstrapApp
     config.generators.system_tests = nil
   end
 end
+
+module CrudSampleApp
+  class Application < Rails::Application
+    # Initialize configuration defaults for originally generated Rails version.
+    config.load_defaults 6.0
+    # ***** 以下を追加 *****
+    config.i18n.default_locale = :ja
+    # ***** 以上を追加 *****
+    # Settings in config/environments/* take precedence over those specified here.
+  end
+end
